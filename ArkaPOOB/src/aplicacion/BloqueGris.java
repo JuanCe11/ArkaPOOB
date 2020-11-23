@@ -1,12 +1,19 @@
 package aplicacion;
 
 /**
- * Estos bloques son indestructibles, la bola nunca los destruye. Cuando una bola se estrella con ellos, rebota
-como lo haría con una plataforma. Al igual que los bloques rojos, aparecen comúnmente. No dan puntos.
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * Estos bloques son indestructibles, la bola nunca los destruye. Cuando una
+ * bola se estrella con ellos, rebota como lo harï¿½a con una plataforma. Al igual
+ * que los bloques rojos, aparecen comï¿½nmente. No dan puntos.
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class BloqueGris extends Bloque {
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public BloqueGris(int x, int y) {
 		super(x, y);
@@ -14,11 +21,11 @@ public class BloqueGris extends Bloque {
 	}
 
 	@Override
-	public void destruyase(ArkaPOOB juego,Bola bola) {
+	public void destruyase(ArkaPOOB juego, Bola bola) {
 	}
-	
+
 	@Override
-	public boolean enJuego(){
+	public boolean enJuego() {
 		return false;
 	}
 

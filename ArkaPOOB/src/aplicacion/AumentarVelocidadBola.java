@@ -2,11 +2,17 @@ package aplicacion;
 
 /**
  * Se encarga de aumentar la velocidad de la bola
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class AumentarVelocidadBola extends Sorpresa {
-	
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public AumentarVelocidadBola(int x, int y) {
 		super(x, y);
 		setImagen("recursos/SorpresaBola+.png");
@@ -16,6 +22,5 @@ public class AumentarVelocidadBola extends Sorpresa {
 	public void aplicarPoder(Jugador jugador, Bola bola) {
 		bola.aumentarVelocidad();
 	}
-
 
 }

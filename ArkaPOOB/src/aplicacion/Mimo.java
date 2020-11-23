@@ -2,13 +2,18 @@ package aplicacion;
 
 import java.util.ArrayList;
 
-
 /**
  * Representa un modo de usuario CPU, imita el movimiento de su pareja
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class Mimo extends Maquina {
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public Mimo(int x, int y) {
 		super(x, y);
@@ -20,7 +25,7 @@ public class Mimo extends Maquina {
 	}
 
 	@Override
-	public void mover(Bola bola, ArrayList sorpresas, Jugador otroJugador) {
-		
+	public void mover(Bola bola, ArrayList<Sorpresa> sorpresas, Jugador otroJugador) {
+
 	}
 }

@@ -4,10 +4,15 @@ package aplicacion;
 /**
  * Aparecen raramente. Si alguno es golpeado, hace pasar directamente al siguiente nivel. Son destruidos con
 un solo golpe de la bola. Dan 500 puntos.
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class BloqueRosado extends Bloque {
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public BloqueRosado(int x, int y) {
 		super(x, y);

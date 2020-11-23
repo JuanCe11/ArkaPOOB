@@ -4,10 +4,16 @@ import java.util.ArrayList;
 
 /**
  * Representa a un jugador humano en el juego
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class Humano extends Jugador {
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public Humano(int x, int y) {
 		super(x, y, true);
@@ -19,7 +25,7 @@ public class Humano extends Jugador {
 	}
 
 	@Override
-	public void mover(Bola bola, ArrayList sorpresas, Jugador otroJugador) {
-		
+	public void mover(Bola bola, ArrayList<Sorpresa> sorpresas, Jugador otroJugador) {
+
 	}
 }

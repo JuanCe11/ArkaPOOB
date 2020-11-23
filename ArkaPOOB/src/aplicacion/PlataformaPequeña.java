@@ -1,19 +1,25 @@
 package aplicacion;
 
 /**
- * Representa una pequeña plataforma apodada Nave Espacial Vaus, que impide
-que una bola salga de la zona de juego, haciéndola rebotar.
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * Representa una pequeï¿½a plataforma apodada Nave Espacial Vaus, que impide que
+ * una bola salga de la zona de juego, haciï¿½ndola rebotar.
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
-public class PlataformaPequeña extends Plataforma{
+public class PlataformaPequeÃ±a extends Plataforma {
 
-	public PlataformaPequeña(int x, int y, int color) {
-		super(x, y,("PlataformaNormalPequeña"+Integer.toString(color)));
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public PlataformaPequeÃ±a(int x, int y, int color) {
+		super(x, y, ("PlataformaNormalPequeÃ±a" + Integer.toString(color)));
 	}
-	
+
 	@Override
 	public void setColor(int color) {
-		super.setImagen("recursos/PlataformaNormalPequeña"+Integer.toString(color)+".png");
+		super.setImagen("recursos/PlataformaNormalPequeÃ±a" + Integer.toString(color) + ".png");
 	}
 }

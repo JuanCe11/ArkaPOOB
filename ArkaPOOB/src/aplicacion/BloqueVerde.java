@@ -1,43 +1,48 @@
 package aplicacion;
 
-
 /**
- * Estos bloques tienen que ser golpeados 2 veces por la bola para ser destruidos. Dan 200 puntos.
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * Estos bloques tienen que ser golpeados 2 veces por la bola para ser
+ * destruidos. Dan 200 puntos.
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class BloqueVerde extends Bloque {
 
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	private boolean roto;
-	
+
 	public BloqueVerde(int x, int y) {
 		super(x, y);
 		setImagen("recursos/BloqueVerde.png");
 	}
-	
+
 	@Override
 	public void destruyase(ArkaPOOB juego, Bola bola) {
 		if (roto) {
 			setVisible(false);
-		}else {
+		} else {
 			setImagen("recursos/BloqueVerdeRoto.png");
 			roto = true;
 		}
 	}
-	
+
 	@Override
 	public int getPuntaje() {
 		int puntaje = 0;
-		if(!isVisible()) {
+		if (!isVisible()) {
 			puntaje = 200;
 		}
 		return puntaje;
 	}
-	
+
 	@Override
 	public void reiniciar() {
 		setImagen("recursos/BloqueVerde.png");
 		roto = false;
 	}
-	
+
 }

@@ -1,13 +1,18 @@
 package aplicacion;
 
-
 /**
- * Estos bloques al ser golpeados se transforman en el último bloque eliminado manteniendo su posición. Son
-poco comunes. Otorgan 600 puntos.
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * Estos bloques al ser golpeados se transforman en el ï¿½ltimo bloque eliminado
+ * manteniendo su posiciï¿½n. Son poco comunes. Otorgan 600 puntos.
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class BloqueNegro extends Bloque {
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public BloqueNegro(int x, int y) {
 		super(x, y);
@@ -17,22 +22,22 @@ public class BloqueNegro extends Bloque {
 	@Override
 	public int getPuntaje() {
 		int puntaje = 0;
-		if(!isVisible()) {
+		if (!isVisible()) {
 			puntaje = 600;
 		}
 		return puntaje;
 	}
-	
+
 	@Override
 	public void destruyase(ArkaPOOB juego, Bola bola) {
 		setVisible(false);
 		cambiar(juego.getUltimoDestruido());
 		juego.setUltimoDestruido(this);
 	}
-	
+
 	private Bloque cambiar(Bloque nuevoBloque) {
-		if(nuevoBloque == null) {
-			nuevoBloque = new BloqueNegro(0,0);
+		if (nuevoBloque == null) {
+			nuevoBloque = new BloqueNegro(0, 0);
 		}
 		nuevoBloque.reiniciar();
 		nuevoBloque.setX(getX());

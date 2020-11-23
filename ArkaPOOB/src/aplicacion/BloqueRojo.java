@@ -1,13 +1,18 @@
 package aplicacion;
 
-
 /**
- * Corresponden a los bloques normales. Son destruidos con un solo golpe de la bola. Es el tipo de bloque más
-común. Dan 100 puntos.
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * Corresponden a los bloques normales. Son destruidos con un solo golpe de la
+ * bola. Es el tipo de bloque mï¿½s comï¿½n. Dan 100 puntos.
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class BloqueRojo extends Bloque {
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public BloqueRojo(int x, int y) {
 		super(x, y);
@@ -18,6 +23,5 @@ public class BloqueRojo extends Bloque {
 	public int getPuntaje() {
 		return 100;
 	}
-	
 
 }

@@ -1,23 +1,26 @@
 package aplicacion;
 
-
 /**
- * Se encarga de disminuir el tamaño de la plataforma
- * @author Juan Sebastian Frásica y Juan Sebastián Gómez
+ * Se encarga de disminuir el tamaï¿½o de la plataforma
+ * 
+ * @author Juan Sebastian Frï¿½sica y Juan Sebastiï¿½n Gï¿½mez
  *
  */
 public class DisminuirPlataforma extends Sorpresa {
 
-	
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public DisminuirPlataforma(int x, int y) {
 		super(x, y);
 		setImagen("recursos/SorpresaPlataforma-.png");
 	}
-	
-	
+
 	@Override
 	public void aplicarPoder(Jugador jugador, Bola bola) {
-		Plataforma pl = new PlataformaPequeña(0,0,0);
-		jugador.cambiarPlataforma(pl, bola);		
+		Plataforma pl = new PlataformaPequeÃ±a(0, 0, 0);
+		jugador.cambiarPlataforma(pl, bola);
 	}
 }
